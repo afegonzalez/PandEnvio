@@ -1,7 +1,6 @@
 package pandenvio
 
 class EstadoPedido {
-
-    static constraints = {
-    }
+    int id;
+    String nombre;
 }

@@ -1,7 +1,10 @@
 package pandenvio
 
 class Menu {
+    String nombre;
+    float precio;
 
-    static constraints = {
+    float getPrecio(){
+        return precio;
     }
 }

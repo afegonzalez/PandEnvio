@@ -1,7 +1,10 @@
 package pandenvio
 
 class Puntuacion {
+    int estrellas;
+    String comentarios;
 
-    static constraints = {
+    Puntuacion(int estrellas){
+        this.estrellas = estrellas;
     }
 }

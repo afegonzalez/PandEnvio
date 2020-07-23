@@ -1,7 +1,7 @@
 package pandenvio
 
 class AdicionalDistancia {
-
-    static constraints = {
-    }
+    int radio;
+    Ubicacion centro;
+    Ubicacion destino;
 }

@@ -1,7 +1,8 @@
 package pandenvio
 
 class Plato {
-
-    static constraints = {
-    }
+    String nombre;
+    float precio;
+    String categoria;
+    String descripcion;
 }

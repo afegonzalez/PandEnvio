@@ -1,7 +1,7 @@
 package pandenvio
 
 class CuponDescuento {
-
-    static constraints = {
-    }
+    Date fecha;
+    Boolean activo;
+    String codigo;
 }

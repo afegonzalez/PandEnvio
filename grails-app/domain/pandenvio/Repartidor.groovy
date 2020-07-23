@@ -1,7 +1,6 @@
 package pandenvio
 
 class Repartidor {
-
-    static constraints = {
-    }
+    String nombre;
+    int dni;
 }

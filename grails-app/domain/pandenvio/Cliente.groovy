@@ -1,7 +1,9 @@
 package pandenvio
 
 class Cliente {
-
-    static constraints = {
-    }
+    String nombre;
+    String apellido;
+    String mail;
+    Ubicacion ubicacion;
+    Telefono telefono;
 }
