@@ -9,7 +9,7 @@ class MenuSpec extends Specification implements DomainUnitTest<Menu> {
         when:
             Menu menu = new Menu(nombre: 'Viernes', precio: 300)
             boolean admite = menu.admiteA(new CuponDescuentoNulo())
-        expect:
-        admite
+        then:
+            admite
     }
 }

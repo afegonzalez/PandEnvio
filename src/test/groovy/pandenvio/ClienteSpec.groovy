@@ -10,8 +10,9 @@ class ClienteSpec extends Specification implements DomainUnitTest<Cliente> {
 
     void "test basic persistence mocking"() {
         setup:
-            new Cliente(nombre: 'Pepe', apellido:'Argento').save()
-            new Cliente(nombre: 'Moni', apellido: 'Argento').save()
+            // TODO sacar el failOnError: true y pasarle todos los parametros
+            new Cliente(nombre: 'Pepe', apellido:'Argento').save(failOnError: true)
+            new Cliente(nombre: 'Moni', apellido: 'Argento').save(failOnError: true)
 
         expect:
             Cliente.count() == 2
