@@ -1,7 +1,10 @@
 package pandenvio
 
-class CuponDescuentoNulo {
+class CuponDescuentoNulo extends CuponDescuento {
 
-    static constraints = {
+
+    @Override
+    BigDecimal aplicarDescuento(BigDecimal precio) {
+        return precio
     }
 }

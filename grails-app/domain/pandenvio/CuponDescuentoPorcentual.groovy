@@ -1,7 +1,11 @@
 package pandenvio
 
-class CuponDescuentoPorcentual {
+class CuponDescuentoPorcentual extends CuponDescuento{
 
-    static constraints = {
+    BigDecimal porcentaje
+
+    @Override
+    BigDecimal aplicarDescuento(BigDecimal precio) {
+        return precio * (1-porcentaje)
     }
 }
