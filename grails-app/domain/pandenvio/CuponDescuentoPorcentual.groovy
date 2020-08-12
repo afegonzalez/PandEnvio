@@ -1,6 +1,6 @@
 package pandenvio
 
-class CuponDescuentoPorcentual extends CuponDescuento{
+class CuponDescuentoPorcentual extends CuponDescuento {
 
     BigDecimal porcentaje
 

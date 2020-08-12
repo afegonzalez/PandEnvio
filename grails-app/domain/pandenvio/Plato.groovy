@@ -1,9 +1,13 @@
 package pandenvio
 
+enum CategoriaPlato {
+    ENTRADA, BEBIDA, PLATO, POSTRE
+}
+
 class Plato implements Producto {
     String nombre;
     BigDecimal precio;
-    String categoria;
+    CategoriaPlato categoria;
     String descripcion;
 
     BigDecimal getPrecio(){
