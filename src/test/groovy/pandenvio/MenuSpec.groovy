@@ -39,6 +39,4 @@ class MenuSpec extends Specification implements DomainUnitTest<Menu> {
         then:
             precio == 400
     }
-
-
 }

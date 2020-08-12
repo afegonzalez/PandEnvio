@@ -5,9 +5,13 @@ abstract class CuponDescuento {
     Boolean activo;
     String codigo;
 
-    abstract BigDecimal aplicarDescuento(BigDecimal precio)
+    abstract BigDecimal aplicarDescuento(BigDecimal precio) throws CuponYaUtilizadoException
 
     void permitirEn(Producto producto) {
         producto.admiteA(this)
+    }
+
+    boolean estoyActivo() {
+        return activo
     }
 }

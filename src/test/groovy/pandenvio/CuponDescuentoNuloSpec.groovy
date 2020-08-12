@@ -5,14 +5,20 @@ import spock.lang.Specification
 
 class CuponDescuentoNuloSpec extends Specification implements DomainUnitTest<CuponDescuentoNulo> {
 
-    def setup() {
+    void "test Cupon Descuento Nulo activo no aplica ningun descuento"() {
+        when:
+        CuponDescuentoNulo cuponNuloActivo = new CuponDescuentoNulo(fecha: new Date(), activo: true, codigo: 'ABC')
+        BigDecimal precio = cuponNuloActivo.aplicarDescuento(100)
+        then:
+        precio == 100
     }
 
-    def cleanup() {
+    void "test Cupon Descuento Nulo inactivo tampoco aplica ningun descuento"() {
+        when:
+            CuponDescuentoNulo cuponNuloActivo = new CuponDescuentoNulo(fecha: new Date(), activo: false, codigo: 'ABC')
+            BigDecimal precio = cuponNuloActivo.aplicarDescuento(100)
+        then:
+            precio == 100
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
-    }
 }
