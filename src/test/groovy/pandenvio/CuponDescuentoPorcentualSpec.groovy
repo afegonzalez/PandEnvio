@@ -23,4 +23,19 @@ class CuponDescuentoPorcentualSpec extends Specification implements DomainUnitTe
             thrown CuponYaUtilizadoException
     }
 
+
+    void "test Cupon Descuento Porcentual NO puede tener poncertaje menor que 1"() {
+        when:
+            CuponDescuentoPorcentual cuponPorcentualActivo = new CuponDescuentoPorcentual(fecha: new Date(), activo: true, codigo: 'ABC', porcentaje: -1)
+        then:
+            !cuponPorcentualActivo.validate()
+    }
+
+    void "test Cupon Descuento Porcentual NO puede tener poncertaje mayor que 99"() {
+        when:
+            CuponDescuentoPorcentual cuponPorcentualActivo = new CuponDescuentoPorcentual(fecha: new Date(), activo: true, codigo: 'ABC', porcentaje: 100)
+        then:
+            !cuponPorcentualActivo.validate()
+    }
+
 }
