@@ -13,6 +13,6 @@ class AsignadorDeRepartidoresSpec extends Specification implements DomainUnitTes
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

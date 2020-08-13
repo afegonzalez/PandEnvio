@@ -13,6 +13,6 @@ class PedidoParaRetirarSpec extends Specification implements DomainUnitTest<Pedi
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

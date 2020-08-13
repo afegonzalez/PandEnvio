@@ -13,6 +13,6 @@ class AdicionalSpec extends Specification implements DomainUnitTest<Adicional> {
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

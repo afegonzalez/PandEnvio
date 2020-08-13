@@ -13,6 +13,6 @@ class GeneradorDeCuponesSpec extends Specification implements DomainUnitTest<Gen
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

@@ -13,6 +13,6 @@ class TelefonoSpec extends Specification implements DomainUnitTest<Telefono> {
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

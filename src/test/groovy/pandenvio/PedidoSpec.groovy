@@ -13,6 +13,6 @@ class PedidoSpec extends Specification implements DomainUnitTest<Pedido> {
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

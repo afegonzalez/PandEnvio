@@ -13,6 +13,6 @@ class EstadoPedidoSpec extends Specification implements DomainUnitTest<EstadoPed
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

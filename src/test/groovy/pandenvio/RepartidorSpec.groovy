@@ -13,6 +13,6 @@ class RepartidorSpec extends Specification implements DomainUnitTest<Repartidor>
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

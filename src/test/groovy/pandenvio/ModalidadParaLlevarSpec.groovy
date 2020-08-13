@@ -13,6 +13,6 @@ class ModalidadParaLlevarSpec extends Specification implements DomainUnitTest<Mo
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

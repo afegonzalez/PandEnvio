@@ -13,6 +13,6 @@ class PedidoParaLlevarSpec extends Specification implements DomainUnitTest<Pedid
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

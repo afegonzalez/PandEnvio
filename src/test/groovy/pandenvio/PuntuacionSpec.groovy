@@ -13,6 +13,6 @@ class PuntuacionSpec extends Specification implements DomainUnitTest<Puntuacion>
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

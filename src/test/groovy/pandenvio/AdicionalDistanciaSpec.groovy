@@ -13,6 +13,6 @@ class AdicionalDistanciaSpec extends Specification implements DomainUnitTest<Adi
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

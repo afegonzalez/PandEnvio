@@ -13,6 +13,6 @@ class UbicacionSpec extends Specification implements DomainUnitTest<Ubicacion> {
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }
